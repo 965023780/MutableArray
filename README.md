@@ -62,4 +62,4 @@
   **Input**  
  ![**Input**](https://github.com/965023780/MutableArray/blob/master/TextInput.png)  
  **Result**  
- ![**Result**](https://github.com/965023780/MutableArray/blob/master/Result.png
+ ![**Result**](https://github.com/965023780/MutableArray/blob/master/Result.png)
