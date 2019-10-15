@@ -1,6 +1,6 @@
 package mutable_array;
 public class MutableStringArray {
-    public String[] data = new String[10];
+    private String[] data = new String[10];
     public int size = 0;
 //Add new data at the end
     public boolean add(String s) {
