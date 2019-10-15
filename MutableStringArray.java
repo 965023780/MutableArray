@@ -2,7 +2,7 @@ package mutable_array;
 public class MutableStringArray {
     public String[] data = new String[10];
     public int size = 0;
-//在动态数组末尾添加新元素
+//Add new data at the end
     public boolean add(String s) {
         if (size < getLength() - 1)
             data[size++] = s;
@@ -15,12 +15,12 @@ public class MutableStringArray {
         }
         return true;
     }
-//在动态数组末尾添加数组s中所有元素
+//Add elements in an other array at the end  
     public void add(String[] s) {
         for (int i = 0; i < s.length; i++)
             add(s[i]);
     }
-//在指定位置添加元素
+//Add new data in the spcified location 
     public boolean addAt(String s, int index) {
         if (index < 0 || index > getLength())
             return false;
@@ -40,12 +40,12 @@ public class MutableStringArray {
         size++;
         return true;
     }
-//删除末尾的元素
+//Delete the data at the end
     public boolean deleteLast() {
         data[--size] = null;
         return true;
     }
-//删除指定位置的元素
+//Delete the data in the specifed location
     public boolean deleteAt(int index) {
         if (index < 0 || index >= size)
             return false;
@@ -54,30 +54,30 @@ public class MutableStringArray {
         data[size--] = null;
         return true;
     }
-//清空数组元素
+//Empty the mutable array
     public void clear() {
         data = new String[10];
     }
-//改变指定位置元素
+//Change the data in the specifed location
     public void changeAt(String s, int index) {
         data[index] = s;
     }
-//得到指定位置元素
+//Get and return the data in the specifed location
     public String get(int index) {
         return data[index];
     }
-//检测数组是是否有字符串s
+//Determine whether the data is in the array
     public boolean contains(String s) {
         for (int i = 0; i < size; i++)
             if (data[i].equals(s))
                 return true;
         return false;
     }
-//得到数组长度
+//Get and return the length of the array
     public int getLength() {
         return data.length;
     }
-//输出所有元素
+//print elements in the array
     public void putOut() {
         System.out.print("数组元素为：");
         for (int i = 0; i < data.length; i++)
